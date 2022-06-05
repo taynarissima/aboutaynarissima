@@ -1,0 +1,204 @@
+/* -------------------------- */
+/* ------- css global ------- */
+/* -------------------------- */
+
+body {
+  font-family: "Gugi", cursive;
+  background: url(../img/background.png);
+}
+
+.caixa {
+  position: relative;
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -------------------------- */
+/* ---------- Header -------- */
+/* -------------------------- */
+
+header {
+  background: linear-gradient(
+    326deg,
+    rgba(103, 65, 255, 1) 0%,
+    rgba(255, 94, 225, 1) 32%,
+    rgba(108, 230, 255, 1) 100%
+  );
+}
+
+header .caixa {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  header .caixa {
+    flex-direction: column;
+  }
+}
+
+/* -------------------------- */
+/* --------- conteudo ------- */
+/* -------------------------- */
+
+.caixa nav li {
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+header .caixa .contato a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+header .caixa .contato a:hover {
+  font-weight: bold;
+  color: rgb(125, 125, 125);
+}
+
+header .caixa .contato a:active {
+  font-weight: bold;
+  color: rgb(250, 0, 237);
+}
+
+section.about {
+  background: rgb(243, 197, 255, 0.9);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+section.about .caixa {
+    display: flex;
+    flex-direction: column;
+}
+
+section.about .caixa img.profile {
+  width: 18%;
+  border-radius: 100%;
+  transition: 500ms;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+@media (max-width: 930px) {
+  section.about .caixa img.profile {
+    position: relative;
+    top: 0;
+    transform: initial;
+    left: initial;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}
+
+section.about .caixa img.profile:hover {
+  opacity: 0.5;
+}
+
+section.about .caixa .text {
+  max-width: 600px;
+  margin: auto;
+}
+section.about .caixa .text .titulo-principal {
+  background: white;
+  font-size: 30px;
+  text-align: center;
+  transition: 500ms;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #000000;
+  margin-bottom: 30px;
+}
+
+section.about .caixa .text .titulo-principal:hover {
+  font-weight: bold;
+}
+
+section.about .caixa .text p {
+  text-align: center;
+  margin: 0 0 1em;
+  padding: 0 20px;
+}
+section.about .caixa .text p:last-child {
+  margin-bottom: 0;
+}
+
+section.about .caixa .text .lista-experience {
+  background: rgb(243, 197, 255, 0.9);
+  clear: left;
+}
+
+section.about .caixa .text .lista-experience li {
+  text-align: center;
+  padding-bottom: 1em;
+  clear: left;
+}
+
+section.about .caixa .text .lista-experience li:before {
+  content: "\2726";
+}
+
+/* -------------------------- */
+/* ------- ferramentas ------ */
+/* -------------------------- */
+
+.ferramentas {
+  background: rgb(243, 197, 255, 0.9);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+section.ferramentas .caixa {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.ferramentas .caixa .imagens {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+section.ferramentas .caixa .texto-alura {
+  background: rgb(243, 197, 255, 0.9);
+}
+
+section.ferramentas .caixa .texto-alura p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  background: rgb(103, 65, 255);
+  background: linear-gradient(
+    326deg,
+    rgba(103, 65, 255, 1) 0%,
+    rgba(255, 94, 225, 1) 32%,
+    rgba(108, 230, 255, 1) 100%
+  );
+  text-align: center;
+  margin-top: 40px;
+}
+
+.copyright {
+  position: relative;
+  height: 40px;
+  padding: 1px 0;
+}
+
+.social {
+  width: 2%;
+  padding: 20px 10px;
+  transition: 0.3s;
+}
+
+.social:hover {
+  width: 2.5%;
+}
